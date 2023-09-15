@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 2</title>
+    
+    <style>
+
+        .input{
+            
+            margin-left: 100px;
+            align-self: auto;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="">
+
+        <table style="width: 30%" >
+       
+            <tr>
+             <td><label for="">User id:</label> </td>
+            <td> <input type="text" required pattern="[0-9]{5,12}" ><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">password:</label> </td>
+                <td><input type="password" required pattern=".{7,12}" ><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Name:  </label></td>
+                <td><input type="text"  required  pattern="[A-Za-z\s]*"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Address:</label></td>
+                <td> <input type="email"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Country: </label> </td>
+                <td> <select name="" id="">
+
+                    <option value="">(Plase select a Country)</option>
+                    <option value=""> Colombia</option>
+                    <option value="">España</option>
+                    <option value="">USA</option>
+                    <option value="">Mexico</option>
+                </select><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Zip Code: </label></td>
+                <td><input type="text" pattern="[0-9]*"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Sex:</label></td>
+                <td> <input type="radio" name="Sexo">Male 
+                    <input type="radio" name="Sexo">Famele <br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Languague:</label></td>
+                <td> <input type="checkbox" name="" checked>English
+                    <input type="checkbox" name="" >Not English <br><br></td>
+            </tr>
+            <tr>
+                <td><label for="" style="vertical-align: top;">About: </label></td>
+                <td><textarea name="" id="" cols="30" rows="10" ></textarea><br><br></td>
+            </tr>
+        
+           
+        </table>
+        
+        <input type="submit" value="submit" class="input">
+       
+    </form>
+</body>
+</html>
